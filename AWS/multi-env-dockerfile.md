@@ -13,6 +13,7 @@ Use environment variables to differentiate between development and production co
 ---
 
 ### 3. *Example Dockerfile*
+```
 Here’s an example Dockerfile that supports both environments:
 
 Dockerfile
@@ -53,7 +54,7 @@ ENV DEBUG=False
 
 # Command for production
 CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:app"]
-
+```
 
 ---
 
